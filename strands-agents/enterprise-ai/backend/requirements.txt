@@ -1,0 +1,10 @@
+Flask>=2.3.3
+Flask-RESTful>=0.3.10
+Flask-Cors>=4.0.0
+python-dotenv==1.0.0
+strands-agents
+clickhouse-connect>=0.8.16
+strands-agents-tools
+langchain-mcp-adapters
+psycopg2-binary>=2.9.9
+SQLAlchemy>=2.0.0

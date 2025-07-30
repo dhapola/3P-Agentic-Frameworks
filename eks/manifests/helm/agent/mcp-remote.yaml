@@ -1,0 +1,10 @@
+# Use this to specify the location of the remote mcp servers, overrides the default mcp.json in values.yaml inside the helm chart
+mcp:
+  mcp.json: |
+    {
+      "mcpServers": {
+        "weather-mcp-http": {
+          "url": "http://weather-mcp.mcp-servers:8080/mcp"
+        }
+      }
+    }

@@ -1,0 +1,10 @@
+{{- if (index .Values.agent "agent.md") }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "agent.fullname" . }}-config
+  labels:
+    {{- include "agent.labels" . | nindent 4 }}
+data:
+  agent.md: {{ index .Values.agent "agent.md" | quote }}
+{{- end }}
